@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function showClaimPopup() {
         // Cycle back to the first preset if the last one is shown
         if (presetIndex >= usernames.length) {
-            presetIndex = 5; // Reset to start after all presets have been shown
+            presetIndex = 0; // Reset to start after all presets have been shown
         }
 
         // Get the current preset
@@ -310,11 +310,11 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             popup.style.opacity = '0';
             popup.style.transform = 'translateY(100px)';
-        }, 3500);
+        }, 4500);
 
         presetIndex++; // Move to the next preset
     }
 
     // Show a new claim every 5 seconds
-    setInterval(showClaimPopup, 4000);
+    setInterval(showClaimPopup, 6000);
 });
