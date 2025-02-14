@@ -316,5 +316,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Show a new claim every 5 seconds
-    setInterval(showClaimPopup, 6000);
+    setInterval(showClaimPopup, 7000);
 });
