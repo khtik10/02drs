@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     // Updated avatar paths
-    const avatars = ['https://khtik10.github.io/02drs//avatars/avatar1.png', 'https://khtik10.github.io/02drs/avatars/avatar2.png', 'https://khtik10.github.io/02drs/avatars/avatar3.png', 
+    const avatars = ['https://khtik10.github.io/02drs/avatars/avatar1.png', 'https://khtik10.github.io/02drs/avatars/avatar2.png', 'https://khtik10.github.io/02drs/avatars/avatar3.png', 
                      'https://khtik10.github.io/02drs/avatars/avatar4.png', 'https://khtik10.github.io/02drs/avatars/avatar5.png', 'https://khtik10.github.io/02drs/avatars/avatar6.png', 
                      'https://khtik10.github.io/02drs/avatars/avatar7.png', 'https://khtik10.github.io/02drs/avatars/avatar8.png', 'https://khtik10.github.io/02drs/avatars/avatar9.png', 
                      'https://khtik10.github.io/02drs/avatars/avatar10.png'];
