@@ -258,10 +258,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     // Updated avatar paths
-    const avatars = ['avatars/avatar1.png', 'avatars/avatar2.png', 'avatars/avatar3.png', 
-                     'avatars/avatar4.png', 'avatars/avatar5.png', 'avatars/avatar6.png', 
-                     'avatars/avatar7.png', 'avatars/avatar8.png', 'avatars/avatar9.png', 
-                     'avatars/avatar10.png'];
+    const avatars = ['../avatars/avatar1.png', '../avatars/avatar2.png', '../avatars/avatar3.png', 
+                     '../avatars/avatar4.png', '../avatars/avatar5.png', '../avatars/avatar6.png', 
+                     '../avatars/avatar7.png', '../avatars/avatar8.png', '../avatars/avatar9.png', 
+                     '../avatars/avatar10.png'];
 
     const items = ['VIP Access', 'Custom Makeup', 'Fast Walk', 'Top Model Rank', 'Runway Diva Rank',
                    '35,000 Tokens', 'Luxury Dress', 'Moongazer Girl Set', 'Futuristic Suit', 'Denim Bag'];
