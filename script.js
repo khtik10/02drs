@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function showClaimPopup() {
         // Cycle back to the first preset if the last one is shown
         if (presetIndex >= usernames.length) {
-            presetIndex = 0; // Reset to start after all presets have been shown
+            presetIndex = 5; // Reset to start after all presets have been shown
         }
 
         // Get the current preset
